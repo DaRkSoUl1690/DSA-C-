@@ -1,5 +1,6 @@
 
 // https://www.youtube.com/watch?v=-NTaXJ7BBXs 
+// try one more time 
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,4 +47,7 @@ int main()
 
     int ans = minCoins(n, a, dp,m);
     cout << ans << endl;
-}
+
+    for(auto x:dp)
+    cout<<x<<" ";
+    }
