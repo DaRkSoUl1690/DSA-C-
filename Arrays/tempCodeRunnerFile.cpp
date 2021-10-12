@@ -1,1 +1,1 @@
- k = k + 2;
+returns true if there is triplet with sum equal
