@@ -23,6 +23,7 @@ int main()
         }
         if (n > 1)
             (n % 2 == 0 ? even : odd)++;
+        cout << even << " " << odd << endl;
     }
     return 0;
 }
