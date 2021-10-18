@@ -59,13 +59,15 @@ int getMedian(int ar1[],
     /* if m1 > m2 then median must
 	exist in ar1[....m1] and
 				ar2[m2...] */
-    if (n % 2 == 0)
-        return getMedian(ar2 + n / 2 - 1,
-                         ar1, n - n / 2 + 1);
-    return getMedian(ar2 + n / 2,
-                     ar1, n - n / 2);
+    if (m1 > m2)
+    {
+        if (n % 2 == 0)
+            return getMedian(ar2 + n / 2 - 1,
+                             ar1, n - n / 2 + 1);
+        return getMedian(ar2 + n / 2,
+                         ar1, n - n / 2);
+    }
 }
-
 /* Function to get median
 of a sorted array */
 int median(int arr[], int n)
