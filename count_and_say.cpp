@@ -11,8 +11,8 @@ string generator(string str)
     unordered_map<char, int>
         tempCount; // It is used to count integer sequence
 
-    for (int i = 0; i < str.length()+1; i++)// 2 3
-    {
+    for (int i = 0; i < str.length() + 1; i++)
+    {// 11 
         // when current char is different from prev one we
         // clear the map and update the ans
         if (tempCount.find(str[i]) == tempCount.end() and i > 0)
@@ -48,7 +48,7 @@ string countnndSay(int n)
 int main()
 {
 
-    int N = 4;
+    int N = 3;
     cout << countnndSay(N) << endl;
     return 0;
 }
