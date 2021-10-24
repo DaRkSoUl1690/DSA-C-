@@ -3,10 +3,7 @@ using namespace std;
 bool check_rotation(string s, string goal)
 {
     if (s.size() != goal.size())
-    {
-        return false;
-    }
-
+        ;
     queue<char> q1;
     for (int i = 0; i < s.size(); i++)
     {
@@ -20,9 +17,11 @@ bool check_rotation(string s, string goal)
     int k = goal.size();
     while (k--)
     {
-        char ch = q1.front();
+        char ch = q2.front();
         q2.pop();
         q2.push(ch);
+        cout<<q2.front()<<endl;
+      //  cout << q2.front() << " " << q1.front() << endl;
         if (q2 == q1)
             return true;
     }
@@ -38,6 +37,13 @@ int main()
     else
         cout << s2 << " is not a rotated form of " << s1
              << endl;
-
+    // string s3 = "ACBD";
+    // if (check_rotation(s1, s3))
+    //     cout << s3 << " is a rotated form of " << s1
+    //          << endl;
+    // else
+    //     cout << s3 << " is not a rotated form of " << s1
+    //          << endl;
+    // return 0;
     return 0;
 }
