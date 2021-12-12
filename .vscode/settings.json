@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "ostream": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "*.tcc": "cpp",
+        "functional": "cpp",
+        "new": "cpp"
     }
 }
