@@ -13,7 +13,7 @@ int knapSack(int wt[], int val[], int n, int w)
             {
                 t[i][j] = max(val[i - 1] + t[i][j - wt[i - 1]], t[i - 1][j]);
             }
-            else if (wt[i - 1] < j)
+            else if (wt[i - 1] > j)
             {
                 t[i][j] = t[i - 1][j];
             }
